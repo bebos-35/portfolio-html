@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <form action="http://www.example.com/login.php" method="get">
+            <h4>Personal Information</h4>
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="username" placeholder="username" size="15" maxlength="30" required>
+            <br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder=" +49-1551-0237719" pattern="\+[0-9]{2}-[0-9]{4}-[0-9]{}">
+            <br>
+            <label for="mail">Enter your email address:</label>
+            <input type="email" id="mail" name="mail" placeholder="example@example.com">
+            <br>
+            <label for="diagnosis">Choose the option describing you:</label>
+            <select name="diagnosis" id="diagnosis">
+                <option value="sbn">I have no symptoms or biopsy</option>
+                <option value="sybn">I have symptoms but not biopsy</option>
+                <option value="snby">I have no symptoms but positive biopsy</option>
+                <option value="syby">I have both symptoms and positive biopsy</option>
+            </select>
+            <h4>Result Upload</h4>
+            <p>
+                <label for "document">Upload your melanoma results:</label>
+                <input type="file" id="document" name="document">
+            </p>
+        
+            <div>
+                <button>submit</button>
+            </div>
+        </form>
+    </body>
+</html>
